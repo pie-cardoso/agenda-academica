@@ -1,0 +1,84 @@
+/* Início */
+.radar {
+  margin: 4px 0 22px;
+  padding: 16px;
+  background: var(--lilac);
+  border-radius: var(--radius-lg);
+}
+.radar__tag {
+  display: inline-block;
+  margin: -16px 0 10px -16px;
+  padding: 4px 10px;
+  border-radius: 0 0 10px 0;
+  background: #cfc2e8;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple-ink);
+}
+.radar__title { display: flex; justify-content: space-between; align-items: flex-start; font-family: var(--font-display); font-size: 22px; line-height: 1.15; }
+.radar__title svg { color: var(--purple); }
+.radar__summary { margin: 6px 0 14px; font-size: 12px; color: var(--ink-soft); }
+.radar__list { display: flex; flex-direction: column; gap: 8px; }
+.radar__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+}
+.radar__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 36px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--lilac);
+  color: var(--purple-ink);
+}
+.radar__day { font-size: 15px; font-weight: 600; line-height: 1; }
+.radar__month { margin-top: 2px; font-size: 8px; text-transform: uppercase; }
+.radar__info { flex: 1; min-width: 0; }
+.radar__name { font-size: 13px; font-weight: 600; }
+.radar__sub { margin-top: 1px; font-size: 11px; color: var(--ink-soft); }
+.radar__left { padding: 3px 8px; border-radius: var(--radius-pill); background: var(--peach); color: var(--peach-ink); font-size: 11px; font-weight: 600; white-space: nowrap; }
+
+.section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
+.section-head__title { font-family: var(--font-display); font-size: 20px; letter-spacing: -0.01em; }
+.section-head__link { font-size: 12px; color: var(--purple); font-weight: 500; }
+.section-count { margin: 10px 0; font-size: 11px; color: var(--ink-soft); }
+
+.fab { margin-top: 16px; }
+.home-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+/* Tarefas */
+.list-toolbar { display: flex; align-items: center; justify-content: space-between; margin: 12px 0 10px; font-size: 11px; color: var(--ink-soft); }
+.list-toolbar__sort { display: inline-flex; align-items: center; gap: 4px; color: var(--purple-ink); }
+
+/* Edição */
+.edit-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.edit-meta__left { font-size: 11px; font-weight: 600; color: var(--peach-ink); }
+
+/* Em breve */
+.soon {
+  margin-top: 24px;
+  padding: 28px 18px;
+  text-align: center;
+  background: var(--yellow);
+  border-radius: var(--radius-lg);
+  color: var(--yellow-ink);
+  font-size: 13px;
+  line-height: 1.5;
+}

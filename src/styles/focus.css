@@ -1,0 +1,48 @@
+/* Seletor de tarefa */
+.task-picker { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; margin-bottom: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); color: var(--ink-soft); }
+.task-picker:focus-within { outline: 2px solid var(--purple); outline-offset: 2px; }
+.task-picker__text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.task-picker__subject { font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.task-picker__title { font-size: 14px; font-weight: 600; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.task-picker__select { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; font-size: 16px; }
+
+/* Cartão do timer */
+.timer-card { --accent: var(--purple); display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 14px; background: var(--lilac); border-radius: var(--radius-lg); transition: background .3s; }
+.timer-card--short { --accent: var(--green-ink); background: var(--green); }
+.timer-card--long { --accent: var(--blue-ink); background: var(--blue); }
+.timer-card .tabs { width: 100%; }
+.timer-card .tabs__item.is-active { background: var(--accent); color: #fff; }
+
+.ring { position: relative; width: 220px; max-width: 100%; aspect-ratio: 1; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring__track { fill: rgba(255,255,255,.7); stroke: rgba(255,255,255,.9); stroke-width: 10; }
+.ring__bar { fill: none; stroke: var(--accent); stroke-width: 10; stroke-linecap: round; transition: stroke-dashoffset .3s linear; }
+.ring__center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; }
+.ring__status { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.ring__time { font-family: var(--font-display); font-size: 48px; line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; color: var(--ink); }
+.ring__cycle { max-width: 130px; font-size: 11px; color: var(--ink-soft); }
+
+.cycle-dots { display: flex; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.cycle-dots__item { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid rgba(0,0,0,.18); font-size: 10px; font-weight: 600; color: var(--ink-soft); background: rgba(255,255,255,.5); }
+.cycle-dots__item.is-done { background: var(--accent); border-color: var(--accent); color: #fff; }
+.cycle-dots__item.is-current { border-color: var(--accent); color: var(--accent); background: var(--surface); }
+
+.timer-actions { display: flex; gap: 10px; width: 100%; }
+.timer-actions .btn--primary { background: var(--accent); }
+.timer-actions__reset { width: 48px; flex: none; background: var(--surface); color: var(--ink); }
+.timer-card__hint { font-size: 11px; color: var(--ink-soft); text-align: center; }
+.timer-card__skip { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; color: var(--accent); }
+
+/* Aviso e registros */
+.focus-note { display: flex; gap: 10px; align-items: flex-start; margin: 14px 0 0; padding: 12px 14px; background: var(--green); border-radius: var(--radius-md); color: var(--green-ink); font-size: 12px; line-height: 1.45; }
+.focus-note svg { flex: none; margin-top: 1px; }
+.focus-note strong { display: block; font-family: var(--font-display); font-weight: 500; font-size: 14px; }
+
+.focus-totals { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.session-log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.session-log__item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); }
+.session-log__check { display: grid; place-items: center; flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--green); color: var(--green-ink); }
+.session-log__text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.session-log__title { font-size: 13px; font-weight: 600; }
+.session-log__sub { font-size: 11px; color: var(--ink-soft); }
+.session-log__min { font-size: 12px; font-weight: 600; color: var(--ink-soft); }

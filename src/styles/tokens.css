@@ -1,0 +1,41 @@
+:root {
+  /* Base */
+  --cream: #faf6ee;
+  --surface: #ffffff;
+  --ink: #2a2433;
+  --ink-soft: #6f6880;
+  --line: #e9e2d6;
+
+  /* Roxo de ação */
+  --purple: #6b4e9b;
+  --purple-dark: #573d84;
+  --purple-ink: #4b3578;
+
+  /* Pastéis */
+  --lilac: #e7def5;
+  --lilac-strong: #d9cdee;
+  --green: #d9ead8;
+  --green-ink: #3f7a46;
+  --blue: #d8e5f3;
+  --blue-ink: #3b6591;
+  --peach: #f8dfcc;
+  --peach-ink: #b4562a;
+  --yellow: #f6ecc6;
+  --yellow-ink: #8a6d13;
+  --rose: #f7dcdc;
+  --rose-ink: #b0372f;
+
+  /* Tipografia */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Forma */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(60, 40, 90, 0.06);
+
+  --nav-height: 72px;
+  --app-width: 430px;
+}
